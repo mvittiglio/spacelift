@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
                 res.writeHead(200, {"Content-Type": "text/plain"});
                 res.end("hello, world!\n");
               });
-              server.listen(8080);' > server.js
+              server.listen(8888);' > server.js
               nohup node server.js &
               EOF
   tags = {
