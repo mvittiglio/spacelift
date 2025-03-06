@@ -3,7 +3,7 @@ resource "aws_security_group" "allow_http" {
   vpc_id = aws_vpc.main.id
 
   ingress {
-    from_port   = 88
+    from_port   = 8888
     to_port     = 8800
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
